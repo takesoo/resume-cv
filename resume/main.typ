@@ -1,5 +1,5 @@
 #import "template.typ": *
-#import "personal.typ": 私情報, 写真パス, 連絡先1, 連絡先2, 学歴データ, 職歴データ, 学習歴データ, 資格データ
+#import "personal.typ": 私情報, 写真パス, 連絡先1, 連絡先2, 学歴データ, 職歴データ, 学習歴データ, 資格データ, 扶養情報データ
 #let title = [#text(tracking: 1em,size: 14pt,[履歴書])]
 
 #let fontSerif = ("Noto Serif", "Noto Serif CJK JP")
@@ -78,8 +78,10 @@
     )
   ),
   linebreak(),
-  志望動機(
-    [私がこの職に応募する理由は、]
+  扶養情報(
+    扶養家族数: 扶養情報データ.扶養家族数,
+    配偶者: 扶養情報データ.配偶者,
+    配偶者の扶養義務: 扶養情報データ.配偶者の扶養義務
   ),
   linebreak(),
   本人希望(

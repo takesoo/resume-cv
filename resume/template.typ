@@ -460,6 +460,36 @@
   )
 }
 
+#let 扶養情報(扶養家族数: 0, 配偶者: "有", 配偶者の扶養義務: "無") = {
+  grid(
+    columns: (1fr, 1fr, 1fr),
+    rect(
+      stroke: 1.5pt,
+      height: 5cm,
+      width: 100%,
+    )[
+      扶養家族(配偶者を除く)
+      #align(center + horizon, text(inputFontSize, [#扶養家族数 人]))
+    ],
+    rect(
+      stroke: 1.5pt,
+      height: 5cm,
+      width: 100%,
+    )[
+      配偶者
+      #align(center + horizon, text(inputFontSize, 配偶者))
+    ],
+    rect(
+      stroke: 1.5pt,
+      height: 5cm,
+      width: 100%,
+    )[
+      配偶者の扶養義務
+      #align(center + horizon, text(inputFontSize, 配偶者の扶養義務))
+    ],
+  )
+}
+
 #let 本人希望(children) = {
   stack(
     rect(
