@@ -1,0 +1,16 @@
+# 個人情報
+resume/personal.typ
+
+# 生成PDF
+*.pdf
+
+# 証明写真（実際の写真）
+resume/image/*.jpg
+resume/image/*.jpeg
+resume/image/*.png
+!resume/image/testImage.png
+
+# OS・エディタ
+.DS_Store
+*.swp
+*~
