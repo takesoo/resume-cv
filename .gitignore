@@ -14,3 +14,6 @@ resume/image/*.png
 .DS_Store
 *.swp
 *~
+
+# Claude Code
+.claude/
