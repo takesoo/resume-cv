@@ -305,6 +305,26 @@
   )
 }
 
+#let 学習歴(年:"", 月:"",学習歴:"") = {
+  set text(inputFontSize) 
+  grid(
+    columns: (1.5cm,0.8cm,1fr),
+    [
+      #align(center,年)
+    ],
+    [
+      #align(center,月)
+    ],
+    [
+      #if (年 == "" and 月 == "" and 学習歴 == "") {
+        align(center,[学習歴])
+      } else {
+        align(start + horizon,[#h(5pt)#学習歴])
+      }
+    ]
+  )
+}
+
 #let 資格(年:"", 月:"",資格:"") = {
   set text(inputFontSize)
   grid(
