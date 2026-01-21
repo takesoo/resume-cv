@@ -6,7 +6,7 @@
 #let fontSan = ("Noto Sans", "Noto Sans CJK JP")
 
 #set text(font: fontSerif, size: systemFontSize)
-#set page(paper: "jis-b5",margin: 1.5cm)
+#set page(paper: "a4",margin: 1.5cm)
 
 = #title
 // 使い方の説明。
